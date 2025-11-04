@@ -35,11 +35,11 @@ namespace Game
             Color drawColor = Color.Lerp(highlightColor, blendColor, 0.5f + Mathf.Sin(Time.time * 6.0f) * 0.5f);
 
             //StartCoroutine(GameOver(MathUtil.Linear));
-            //StartCoroutine(GameOver(MathUtil.EaseIn));
+           // StartCoroutine(GameOver(MathUtil.EaseIn));
             //StartCoroutine(GameOver(MathUtil.EaseOut));
             //StartCoroutine(GameOver(MathUtil.Smoothstep));
             //StartCoroutine(GameOver(MathUtil.EaseOutElastic));
-            //StartCoroutine(GameOver(MathUtil.OutBounce));
+            StartCoroutine(GameOver(MathUtil.OutBounce));
         }
 
         IEnumerator GameOver(EasingFunction func)

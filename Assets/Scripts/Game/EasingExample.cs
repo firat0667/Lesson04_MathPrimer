@@ -16,8 +16,8 @@ namespace Game
             //StartCoroutine(BlendLogic(MathUtil.EaseIn));
             //StartCoroutine(BlendLogic(MathUtil.EaseOut));
             //StartCoroutine(BlendLogic(MathUtil.Smoothstep));
-            //StartCoroutine(BlendLogic(MathUtil.EaseOutElastic));
-            StartCoroutine(BlendLogic(MathUtil.OutBounce));
+            StartCoroutine(BlendLogic(MathUtil.EaseOutElastic));
+            //StartCoroutine(BlendLogic(MathUtil.OutBounce));
         }
 
         IEnumerator BlendLogic(EasingFunction func)
